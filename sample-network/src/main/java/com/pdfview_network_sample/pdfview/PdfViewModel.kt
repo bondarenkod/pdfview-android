@@ -121,5 +121,5 @@ class PdfViewModel(private val cacheDir: File) : ViewModel() {
 }
 
 class PdfViewModelFactory(private val appContext: Context) : ViewModelProvider.NewInstanceFactory() {
-	override fun <T : ViewModel?> create(modelClass: Class<T>): T = PdfViewModel(appContext.cacheDir) as T
+	override fun <T : ViewModel?> create(modelClass: Class<T>): T & Any = (PdfViewModel(appContext.cacheDir) as T)!!
 }

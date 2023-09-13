@@ -27,11 +27,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.pdfview_sample.pdfview'
 }
 
 dependencies {
-    implementation 'com.dmitryborodin:pdfview-android:1.1.0'
-//    implementation project(':pdfview-android')
+    // implementation 'com.dmitryborodin:pdfview-android:1.1.0'
+    implementation project(':pdfview-android')
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin"
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
