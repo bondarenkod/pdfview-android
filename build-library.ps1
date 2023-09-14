@@ -1,0 +1,1 @@
+./gradlew pdfview-android:assembleRelease --warning-mode all
